@@ -3,7 +3,7 @@ import os.path
 import requests
 
 PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-RESOURCES_PATH = os.path.join(PROJECT_ROOT_PATH, 'resources')
+RESOURCES_PATH = os.path.join(PROJECT_ROOT_PATH, '../resources')
 
 def test_downloaded_file_size():
     # TODO сохранять и читать из tmp, использовать универсальный путь

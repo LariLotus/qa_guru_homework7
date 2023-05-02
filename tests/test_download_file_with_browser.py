@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-RESOURCES_PATH = os.path.join(PROJECT_ROOT_PATH, 'resources')
+RESOURCES_PATH = os.path.join(PROJECT_ROOT_PATH, '../resources')
 
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь к tmp
 
