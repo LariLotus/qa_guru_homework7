@@ -14,4 +14,4 @@ with open('new_file_with_a', 'a') as file_a:
 with open('new_file_with_x', 'x') as file_x:
     file_x.write('I am the chosen one')
 
-    vvvvv
+
