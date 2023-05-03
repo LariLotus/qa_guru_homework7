@@ -18,5 +18,4 @@ def test_pdf():
         print(number_of_pages)
         print(text)
         assert number_of_pages == 412
-        assert text == 'pytest Documentation\nRelease 0.1\nholger krekel, trainer and consultant, ' \
-                       'https://merlinux.eu/\nJul 14, 2022 '
+        assert text == 'pytest Documentation\nRelease 0.1\nholger krekel, trainer and consultant, https://merlinux.eu/\nJul 14, 2022'
