@@ -15,8 +15,8 @@ RESOURCES_PATH = os.path.join(PROJECT_ROOT_PATH, '../resources')
 def test_download_file_with_browser():
     options = webdriver.ChromeOptions()
     prefs = {
-    "download.default_directory": '/Users/kot/GitHubProjects/qa-guru/qa_guru_python_5_7_files',
-    "download.prompt_for_download": False
+        "download.default_directory": '~/PycharmProjects/qa_guru_homework7',
+        "download.prompt_for_download": False
     }
     options.add_experimental_option("prefs", prefs)
 
