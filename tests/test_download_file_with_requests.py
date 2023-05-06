@@ -2,8 +2,8 @@ import os.path
 
 import requests
 
-PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-RESOURCES_PATH = os.path.join(PROJECT_ROOT_PATH, '../resources')
+from constants import RESOURCES_PATH
+
 
 def test_downloaded_file_size():
     # TODO сохранять и читать из tmp, использовать универсальный путь
@@ -18,4 +18,3 @@ def test_downloaded_file_size():
     size = os.path.getsize(tmp)
 
     assert size == 30803
-

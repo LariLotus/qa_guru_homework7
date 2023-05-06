@@ -6,8 +6,8 @@ from selene import browser
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-RESOURCES_PATH = os.path.join(PROJECT_ROOT_PATH, '../resources')
+from constants import RESOURCES_PATH
+
 
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь к tmp
 
@@ -15,7 +15,7 @@ RESOURCES_PATH = os.path.join(PROJECT_ROOT_PATH, '../resources')
 def test_download_file_with_browser():
     options = webdriver.ChromeOptions()
     prefs = {
-        "download.default_directory": '~/PycharmProjects/qa_guru_homework7',
+        "download.default_directory": RESOURCES_PATH,
         "download.prompt_for_download": False
     }
     options.add_experimental_option("prefs", prefs)
@@ -35,7 +35,3 @@ def test_download_file_with_browser():
 
     download_file = os.path.join(RESOURCES_PATH, 'pytest-main.zip')
     assert os.path.exists(download_file)
-
-
-
-

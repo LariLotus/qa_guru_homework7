@@ -1,10 +1,12 @@
 from pypdf import PdfReader
 import os
 
+
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь
 
-PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-RESOURCES_PATH = os.path.join(PROJECT_ROOT_PATH, '../resources')
+import os.path
+
+from constants import RESOURCES_PATH
 
 
 def test_pdf():
